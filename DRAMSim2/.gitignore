@@ -1,0 +1,9 @@
+master_test
+Test
+results/
+test.trc
+*.swp
+*.o
+output.txt
+*.log
+tags

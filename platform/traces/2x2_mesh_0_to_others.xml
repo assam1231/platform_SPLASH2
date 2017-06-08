@@ -1,0 +1,31 @@
+<master id="0" data_mode="PREDEFINED" log="log/m0.log">
+	<master_action type="TRANSACTION" command="WR" address="0x000" data_length="8" />
+	<master_action type="WAIT" time="5" time_unit="SC_NS" />
+
+	<master_action type="TRANSACTION" command="WR" address="0x100" data_length="8" />
+	<master_action type="WAIT" time="5" time_unit="SC_NS" />
+
+	<master_action type="TRANSACTION" command="WR" address="0x200" data_length="8" />
+	<master_action type="WAIT" time="5" time_unit="SC_NS" />
+
+	<master_action type="TRANSACTION" command="WR" address="0x300" data_length="8" />
+	<master_action type="WAIT" time="5" time_unit="SC_NS" />
+</master>
+
+<master id="1" data_mode="PREDEFINED" log="log/m1.log">
+</master>
+
+<master id="2" data_mode="PREDEFINED" log="log/m2.log">
+</master>
+
+<master id="3" data_mode="PREDEFINED" log="log/m3.log">
+</master>
+
+<slave id="0"  log="log/s0.log" print="true">
+</slave>
+<slave id="1"  log="log/s1.log" print="true">
+</slave>
+<slave id="2"  log="log/s2.log" print="true">
+</slave>
+<slave id="3"  log="log/s3.log" print="true">
+</slave>

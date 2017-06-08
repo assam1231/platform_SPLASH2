@@ -1,0 +1,6 @@
+2: activate (1,4,197);
+6: write (1,4,109,0 , 0, 'h0);
+16: precharge (1,4,0);
+25: activate (1,5,210);
+29: read (1,5,237,0);
+39: precharge (1,5,0);

@@ -1,0 +1,83 @@
+<master id="0" data_mode="PREDEFINED" log="log/m0.log">
+        <master_action type="WAIT" time="300" time_unit="SC_NS" />
+        <master_action type="TRANSACTION" command="RD" address="0x14000000" data_length="8"/>
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="1" data_mode="PREDEFINED" log="log/m1.log">
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="2" data_mode="PREDEFINED" log="log/m2.log">     
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="3" data_mode="PREDEFINED" log="log/m3.log">   
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="4" data_mode="PREDEFINED" log="log/m4.log">
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="5" data_mode="PREDEFINED" log="log/m5.log">   
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="6" data_mode="PREDEFINED" log="log/m6.log">
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="7" data_mode="PREDEFINED" log="log/m7.log">
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="8" data_mode="PREDEFINED" log="log/m8.log">   
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="9" data_mode="PREDEFINED" log="log/m9.log">    
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="10" data_mode="PREDEFINED" log="log/m10.log">    
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="11" data_mode="PREDEFINED" log="log/m11.log">
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="12" data_mode="PREDEFINED" log="log/m12.log">
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="13" data_mode="PREDEFINED" log="log/m13.log">
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="14" data_mode="PREDEFINED" log="log/m14.log">
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+<master id="15" data_mode="PREDEFINED" log="log/m15.log">
+        <master_action type="WAIT" time="9999" time_unit="SC_NS" />
+</master>
+
+<slave id="0" log="log/s0.log" print="true">
+</slave>
+<slave id="1" log="log/s1.log" print="true">
+</slave>
+<slave id="2" log="log/s2.log" print="true">
+</slave>
+<slave id="3" log="log/s3.log" print="true">
+</slave>
+<slave id="4" log="log/s4.log" print="true">
+</slave>
+<slave id="5" log="log/s5.log" print="true">
+</slave>
+<slave id="6" log="log/s6.log" print="true">
+</slave>
+<slave id="7" log="log/s7.log" print="true">
+</slave>
+<slave id="8" log="log/s8.log" print="true">
+</slave>
+<slave id="9" log="log/s9.log" print="true">
+</slave>
+<slave id="10" log="log/s10.log" print="true">
+</slave>
+<slave id="11" log="log/s11.log" print="true">
+</slave>
+<slave id="12" log="log/s11.log" print="true">
+</slave>
+<slave id="13" log="log/s11.log" print="true">
+</slave>
+<slave id="14" log="log/s11.log" print="true">
+</slave>
+<slave id="15" log="log/s11.log" print="true">
+</slave>

@@ -1,0 +1,6 @@
+arbType FIFO
+arbFIXED_Coef 4 3 2 1 0
+inputPipe 0
+lateArb 0
+crossbarPipe 0
+bwdPipe 0

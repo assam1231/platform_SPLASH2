@@ -1,0 +1,44 @@
+#include "TraceBasedOCPMaster.h"
+#include "OCPWrappedMemory.h"
+#include "systemc.h"
+#include <iostream>
+#include "time.h"
+#include <sstream>
+
+using namespace std;
+int sc_main(int argc, char *argv[]) {
+  istringstream iss(argv[1]);
+
+  int sim_cycle;
+  iss >> sim_cycle;
+  //cout << sim_cycle << endl;
+  printf("sim_cycle = %d\n",sim_cycle);
+  TraceBasedOCPMaster fakeCPU("CPU", sim_cycle);
+  OCPWrappedMemory mem("Memory");
+
+  //Config ocp sockets (default configuration)
+  ocpip::ocp_parameters config;
+  fakeCPU.ocp_master_socket.set_ocp_config(config);
+  mem.ocp_slave_socket.set_ocp_config(config);
+ 
+  //Bind sockets
+  fakeCPU.ocp_master_socket(mem.ocp_slave_socket);
+  
+  SHOW_SIM_OUTPUT = false;
+
+  sc_set_time_resolution(1, SC_NS);
+
+
+  //count simulation time
+  clock_t start_time, end_time;
+  double total_time = 0;
+  start_time = clock();
+  sc_start(3*sim_cycle, SC_NS);
+  end_time = clock();
+  total_time = static_cast<double>(end_time - start_time)/CLOCKS_PER_SEC;
+  mem.printStats(true);
+  cout << "Simulation time: " << total_time << "seconds" << endl;
+ // cout << total_time << endl;
+
+  return 0;
+}

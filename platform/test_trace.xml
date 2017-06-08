@@ -1,0 +1,33 @@
+<master id="0" data_mode="PREDEFINED" log="log/m0.log">
+    <master_action type="TRANSACTION" command="RD" address="0x001e0000" data_length="8"/>
+</master>
+<master id="1" data_mode="PREDEFINED" log="log/m1.log">
+</master>
+<master id="2" data_mode="PREDEFINED" log="log/m2.log">
+</master>
+<master id="3" data_mode="PREDEFINED" log="log/m3.log">
+</master>
+<master id="4" data_mode="PREDEFINED" log="log/m4.log">
+</master>
+<master id="5" data_mode="PREDEFINED" log="log/m5.log">
+</master>
+<master id="6" data_mode="PREDEFINED" log="log/m6.log">
+</master>
+<master id="7" data_mode="PREDEFINED" log="log/m7.log">
+</master>
+<master id="8" data_mode="PREDEFINED" log="log/m8.log">
+</master>
+<master id="9" data_mode="PREDEFINED" log="log/m9.log">
+</master>
+<master id="10" data_mode="PREDEFINED" log="log/m10.log">
+</master>
+<master id="11" data_mode="PREDEFINED" log="log/m11.log">
+</master>
+<master id="12" data_mode="PREDEFINED" log="log/m12.log">
+</master>
+<master id="13" data_mode="PREDEFINED" log="log/m13.log">
+</master>
+<master id="14" data_mode="PREDEFINED" log="log/m14.log">
+</master>
+<master id="15" data_mode="PREDEFINED" log="log/m15.log">
+</master>

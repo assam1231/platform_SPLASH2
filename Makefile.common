@@ -1,0 +1,42 @@
+SHELL = /bin/sh
+
+#
+# Use $(V) in place of '@' on command lines in Makefiles 
+# to control echoing command lines with VERBOSE=1 on make command
+# 
+ifeq ($(VERBOSE),1)
+  V=
+else
+  V=@
+endif
+
+#Define compiler as g++ to compile C++ program
+CC = g++
+
+#Define compile flags
+CFLAGS = -DSC_INCLUDE_DYNAMIC_PROCESSES -g
+
+
+
+#Define some directory variables
+ifndef SYSTEMC_HOME
+	SYSTEMC_HOME = /users/student/mr101/cwchang/lib/systemc-2.3/
+endif
+
+ifndef OCP_HOME
+	OCP_HOME = ../ocp_sockets_2_2x2_2
+endif
+
+TRAFFIC_MODULE_DIR = ../traffic_modules_ocp
+NI_DIR = ../ni
+XML_PARSER_DIR = ../tinyxml2
+ADDRESS_MAP = ../simple_address_map
+ROUTER_DIR = ../router
+NOC_DIR = ../noc
+DRAMSim2 = ../DRAMSim2
+MEMSYS = ../memsys
+
+
+
+
+
